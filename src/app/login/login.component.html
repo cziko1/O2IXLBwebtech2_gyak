@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h1><b>Üdvözlöm, ez itt Janonym98 gyümölcsös webshopja! A belépéshez bejelentkezés szükséges, amit szükség esetén regisztráció előz meg.</b></h1>
+<br>
+<p></p>
+
+
+<div class="formbox">
+
+  <h1><b>Bejelentkezés</b></h1>
+<form class="form" [formGroup]= "loginForm" (ngSubmit)="onSubmit()" class="form">
+
+
+  <mat-form-field >
+    Felhasználónév: <input matInput type="text" class="form-control" placeholder="Felhasználónév" formControlName="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    Jelszó:     <input matInput type="password" class="form-control" placeholder="Jelszó" formControlName="password">
+  </mat-form-field>
+
+  <br>
+  <button mat-raised-button class="btn" type="submit" routerLinkActive="active"  >Bejelentkezés</button>
+  <p></p>
+
+</form>
+<button mat-raised-button class="btn" routerLinkActive="active"  routerLink="/register">Regisztráció</button>
+</div>
+
+</body>
+</html>
+

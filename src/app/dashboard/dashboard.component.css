@@ -1,0 +1,71 @@
+body {
+  background-color:rgb(212, 0, 255);
+  text-align: center;
+  min-height: 100%;
+  height: fit-content;
+}
+
+.headbody{
+  background: url(headbody.png);
+  width: 250pt;
+  height: 220pt;
+}
+
+.mat-table{
+
+  text-align: center;
+  color: black;
+  max-height: 800px;
+  margin: auto;
+  width: 100%;
+  border: black 1px;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+td {
+  background-color: rgb(238, 255, 0);
+}
+
+.dbtn{
+  display: inline-block;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  size: 20%;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+
+}
+
+.dbtn:hover {
+  background-color: white;
+  color: black;
+
+}
+
+.btn{
+
+  display: inline-block;
+  background-color: rgb(51, 255, 0);
+  color: black;
+  width : 200px;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+
+
+}
+
+.btn:hover {
+  background-color: red;
+
+}

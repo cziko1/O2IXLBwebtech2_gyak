@@ -1,0 +1,44 @@
+<html>
+<body>
+<h1><b>Új termék felvétele</b></h1>
+
+<div class="formbox">
+<form class="form-horizontal"  [formGroup]="productForm" (ngSubmit)="onSubmit()" class="form">
+  <mat-form-field >
+    Termék neve <p></p>
+      <select name="name" class="form-control" formControlName="name">
+        <option value="alma">Alma</option>
+        <option value="körte">Körte</option>
+        <option value="narancs">Narancs</option>
+        <option value="dinnye">Dinnye</option>
+        <option value="eper">Eper</option>
+        <option value="banán">Banán</option>
+        <option value="barack">Barack</option>
+    </select>
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    Termék minősége <p></p>
+      <select name="quality" class="form-control" formControlName="quality">
+        <option value="gyenge">gyenge</option>
+        <option value="jó">jó</option>
+        <option value="király">király</option>
+    </select>
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    Termék tömege (kg): <input type="number" min="1" class="form-control" placeholder="Termék tömege(kg)" formControlName="weight">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    Termék ára (Ft/kg): <input type="number" min="1" class="form-control" placeholder="Termék ára (Ft/kg)" formControlName="price">
+  </mat-form-field>
+  <br>
+  <p></p>
+  <button mat-raised-button class="btn" type="submit" >Új termék</button>
+  <button mat-raised-button routerLinkActive="active" class="btn" routerLink="/dashboard">Vissza</button>
+</form>
+</div>
+</body>
+</html>
+

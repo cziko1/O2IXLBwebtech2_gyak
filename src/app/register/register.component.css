@@ -1,0 +1,36 @@
+
+body {
+  background-color: rgb(212, 0, 255);
+  text-align: center;
+  padding: 15px;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.btn {
+  margin: 5px;
+  padding: 20px;
+  width : 200px;
+  color: black;
+  background-color: rgb(84, 168, 252);
+}
+.btn:hover {
+  background-color: rgb(30, 255, 0);
+
+}
+
+.formbox{
+  margin: auto;
+  width: 30%;
+  border: 3px solid black;
+  padding: 10px;
+  background-color : rgb(255, 238, 238);
+}

@@ -1,0 +1,40 @@
+<html>
+<body>
+<table widht= 90% align="center">
+  <tbody>
+      <tr>
+          <td align="center" class="headbody"></td>
+      </tr>
+  </tbody>
+</table>
+<h1><b>Janonym98 gyümölcsös webshop termékeinek listája </b></h1>
+
+<br>
+
+<table class="mat-table">
+  <thead>
+  <tr>
+    <th>Név</th>
+    <th>Minőség</th>
+    <th>Tömeg (kg)</th>
+    <th>Ár (Forint/kg)</th>
+    <th>Törlés</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let product of products">
+    <td>{{product.name}}</td>
+    <td>{{product.quality}}</td>
+    <td>{{product.weight}}</td>
+    <td>{{product.price}}</td>
+    <td>
+      <button (click)="doDelete(product)" class="dbtn"> <i class="material-icons">delete</i></button>
+    </td>
+  </tr>
+</table>
+<br>
+
+<button mat-raised-button routerLinkActive="active" class="btn" routerLink="/add-product">Új termék hozzáadása</button>
+<button mat-raised-button routerLinkActive="active" class="btn" routerLink="/login">Vissza</button>
+
+</body>
+</html>
